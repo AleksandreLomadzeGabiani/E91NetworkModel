@@ -1,8 +1,8 @@
 # E91NetworkModel
 
-  This model is predicated upon the entanglement (https://en.wikipedia.org/wiki/Quantum_entanglement)
+  This model is predicated upon the entanglement (https://en.wikipedia.org/wiki/Quantum_entanglement). It tries to fix the problem of having to keep a lot of photon pairs in each individual computer which is one of the largest downsides of entanglement based protocols.
   
-  In a nutshell ::
+#  In a nutshell ::
   
   (Computer A) -----> (SERVER) -------> (Computer B)
   
