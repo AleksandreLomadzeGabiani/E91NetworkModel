@@ -1,12 +1,20 @@
 # E91NetworkModel
 
-  This model is predicated upon the entanglement (https://en.wikipedia.org/wiki/Quantum_entanglement). It tries to fix the problem of having to keep a lot of photon pairs in each individual computer which is one of the largest downsides of entanglement based protocols.
+  This model is predicated upon the [entanglement](https://en.wikipedia.org/wiki/Quantum_entanglement). It tries to fix the problem of having to keep a lot of photon pairs in each individual computer which is one of the largest downsides of entanglement based protocols.
   
-#  In a nutshell ::
+##  In a nutshell ::
   
-  (Computer A) -----> (SERVER) -------> (Computer B)
   
-  Computer A sends the server ping to check photons and what computer to send the values to. SERVER then sends Computer B the ping that Computer A wants to share the key and that Computer B needs to check photons. That leaves us with 2 keys. 1 key is shared between SERVER and Computer A. Second is shared between SERVER and Computer B. Key 1 is encrypted with key 2 (using OTP so that it is unconditionally safe) and then sent to Computer B. Computer B decrypts the key 1 using key 2. Therefore both Computer 1 and 2 have key 1 and they can be connected securely.
+  >**(Computer A) -- K1 --> (SERVER) ---K2 , C1--> (Computer B)**
+  
+  
+  >**K1** - The key collected from observing entangled photons (SERVER, Computer A)
+  
+  >**K2** - The key collected from observing entangled photons (SERVER, Computer B)
+  
+  >**C1** - OTP (K1,K2) encrypted Key 1 by using Key 2.
+
+  So when Computer A sends the key to SERVER and asks it to send the key to Computer B
 
 
 # DOCUMENTATION
