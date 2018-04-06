@@ -14,7 +14,7 @@
   
   >**C1** - OTP (K1,K2) encrypted Key 1 by using Key 2.
 
-  So when Computer A sends the key to SERVER and asks it to send the key to Computer B
+  So when **Computer A** sends the key to **SERVER** and asks it to send the key to **Computer B**. Then **SERVER** sends a different key **K2** and encrypted info **C1** to Computer B. Then Computer B uses **K2** to decrypt **C1** and finally ends up with **K1**. So in the end both **Computer A and B** have **K1** and can send information safely.
 
 
 # DOCUMENTATION
