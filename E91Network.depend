@@ -1,0 +1,29 @@
+# depslib dependency file v1.0
+1523042557 source:d:\desktop\simulator\e91network\computer.cpp
+	"Computer.h"
+	"qubit.h"
+
+1523041944 d:\desktop\simulator\e91network\computer.h
+	<bits/stdc++.h>
+	"qubit.h"
+
+1523042108 source:d:\desktop\simulator\e91network\main.cpp
+	<iostream>
+	<ctime>
+	<random>
+	"qubit.h"
+	"Computer.h"
+
+1523032170 d:\desktop\simulator\e91network\computer.cpp
+	"Computer.h"
+
+1523038186 source:d:\desktop\simulator\e91network\qubit.cpp
+	"qubit.h"
+	<random>
+
+1523038169 d:\desktop\simulator\e91network\qubit.h
+
+1523034002 d:\desktop\simulator\e91network\qubit.cpp
+	"qubit.h"
+	<random>
+
