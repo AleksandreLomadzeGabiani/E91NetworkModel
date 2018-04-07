@@ -34,6 +34,8 @@
 		</Compiler>
 		<Unit filename="Computer.cpp" />
 		<Unit filename="Computer.h" />
+		<Unit filename="EntangledCubitBlock.cpp" />
+		<Unit filename="EntangledCubitBlock.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="qubit.cpp" />
 		<Unit filename="qubit.h" />
