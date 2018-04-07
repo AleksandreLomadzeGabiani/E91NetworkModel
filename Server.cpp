@@ -5,5 +5,6 @@
 
 Server::Server()
 {
-    //ctor
+    Server::name="NULL";
+    Server::connections={};
 }

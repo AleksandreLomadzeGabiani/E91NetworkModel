@@ -18,7 +18,7 @@ class Computer
     private:
         std::string name;
         std::vector<qubit> bits;
-        std::vector<std::pair<int,Computer> > Keychain;
+        std::vector<std::pair<std::vector<int> ,Computer> > Keychain;
 };
 
 #endif // COMPUTER_H
