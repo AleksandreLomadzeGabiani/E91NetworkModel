@@ -10,25 +10,13 @@ using namespace std;
 int main()
 {
     srand((unsigned)time(0));
-    Computer test=*new Computer("test1",15);
-    std::vector<int> a=test.getBlock().getKey();
-    for(int i=0;i<(int)a.size();i++){
-        cout<<a.at(i);
-    }
-    cout<<endl<<endl;
-    std::vector<int> b=test.getBlock().getKey();
-    for(int i=0;i<(int)a.size();i++){
-        cout<<b.at(i);
-    }
-    cout<<endl<<endl;
-    std::vector<int> c1=OTPencryptdata(a,b);
-    for(int i=0;i<(int)a.size();i++){
-        cout<<c1.at(i);
-    }
-    cout<<endl<<endl;
-    std::vector<int> data=OTPdecryptdata(c1,b);
-    for(int i=0;i<(int)a.size();i++){
-        cout<<data.at(i);
+    Computer a=*new Computer("test1",15);
+    Computer b=*new Computer("test2",15);
+
+    a.sendKey(b);
+    std::vector<int> z=b.getKey();
+    for(int l=0;l<(int)z.size();l++){
+        cout<<z.at(l);
     }
     return 0;
 }

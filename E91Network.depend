@@ -27,19 +27,20 @@
 	"qubit.h"
 	<random>
 
-1523131493 source:d:\desktop\simulator\e91network\e91networkmodel\computer.cpp
+1523136810 source:d:\desktop\simulator\e91network\e91networkmodel\computer.cpp
 	"Computer.h"
 	"EntangledCubitBlock.h"
 	"qubit.h"
+	"OTP.h"
 
-1523131315 d:\desktop\simulator\e91network\e91networkmodel\computer.h
+1523138771 d:\desktop\simulator\e91network\e91networkmodel\computer.h
 	<bits/stdc++.h>
 	"qubit.h"
 	"EntangledCubitBlock.h"
 
 1523038169 d:\desktop\simulator\e91network\e91networkmodel\qubit.h
 
-1523132405 source:d:\desktop\simulator\e91network\e91networkmodel\main.cpp
+1523138555 source:d:\desktop\simulator\e91network\e91networkmodel\main.cpp
 	<bits/stdc++.h>
 	<ctime>
 	<random>
@@ -63,7 +64,7 @@
 	"Computer.h"
 	"qubit.h"
 
-1523131452 source:d:\desktop\simulator\e91network\e91networkmodel\entangledcubitblock.cpp
+1523133130 source:d:\desktop\simulator\e91network\e91networkmodel\entangledcubitblock.cpp
 	"EntangledCubitBlock.h"
 	"qubit.h"
 	<bits/stdc++.h>
@@ -72,6 +73,10 @@
 	"qubit.h"
 	<bits/stdc++.h>
 
-1523132414 d:\desktop\simulator\e91network\e91networkmodel\otp.h
+1523136930 d:\desktop\simulator\e91network\e91networkmodel\otp.h
+	<bits/stdc++.h>
+
+1523136990 source:d:\desktop\simulator\e91network\e91networkmodel\otp.cpp
+	"OTP.h"
 	<bits/stdc++.h>
 
