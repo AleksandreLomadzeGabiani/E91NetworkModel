@@ -14,6 +14,10 @@ EntangledCubitBlock::EntangledCubitBlock(){
     }
 }
 
+std::vector<int> EntangledCubitBlock::getCurrentState(){
+    return EntangledCubitBlock::currentState;
+}
+
 std::vector<int> EntangledCubitBlock::getKey(){
     int bit=0;
     std::vector<int> key;
@@ -21,5 +25,6 @@ std::vector<int> EntangledCubitBlock::getKey(){
         bit=bits.at(i).getValue();
         key.push_back(bit);
     }
+    EntangledCubitBlock::currentState=key;
     return key;
 }

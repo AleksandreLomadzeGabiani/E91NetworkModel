@@ -9,10 +9,12 @@ class EntangledCubitBlock
         EntangledCubitBlock(int size);
 
         std::vector<int> getKey();
+        std::vector<int> getCurrentState();
     protected:
 
     private:
         std::vector<qubit> bits;
+        std::vector<int> currentState;
 };
 
 #endif // ENTANGLEDCUBITBLOCK_H
