@@ -7,7 +7,7 @@
   
   By real life counterparts I mean events that could also be unproven at the time. I am just working  with the assumption (for the scope of the project) that information quantum physics theories (that I am currently able to access and grasp work the way that they are described in the documents)
   
-  if there is anything anyone would like to add to or correct me on please [contact me](sandro.lomadze-gabiani@americanhighschool.ge) I would much appreciate any and all feedback.
+  if there is anything anyone would like to add to or correct me on please contact me (sandro.lomadze-gabiani@americanhighschool.ge) I would much appreciate any and all feedback.
 ##  In a nutshell ::
   
   
