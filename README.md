@@ -2,6 +2,12 @@
 
   This model is predicated upon the [entanglement](https://en.wikipedia.org/wiki/Quantum_entanglement). It tries to fix the problem of having to keep a lot of photon pairs in each individual computer which is one of the largest downsides of entanglement based protocols.
   
+  ### Note
+  I would like to note that I will not be setting up an actual server in my code. all the objects are supposed to be more simplistic representations of the perfect case scenario. Therefore transfer of information will happen with simple functions insted of actual server involvement. (Therefore I will pass c1 to Computer B through a function insted of creating a classical channel. Additionally other parts of the model might be simplified as well). Keeping all of this in mind I still everything I will simplify will attempt to produce the outcome that is supposed to be achieved by their real life counterparts (for example server recieving k1)
+  
+  By real life counterparts I mean events that could also be unproven at the time. I am just working  with the assumption (for the scope of the project) that information quantum physics theories (that I am currently able to access and grasp work the way that they are described in the documents)
+  
+  if there is anything anyone would like to add to or correct me on please [contact me](sandro.lomadze-gabiani@americanhighschool.ge) I would much appreciate any and all feedback.
 ##  In a nutshell ::
   
   
