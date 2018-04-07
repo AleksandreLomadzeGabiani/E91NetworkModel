@@ -10,7 +10,7 @@ int main()
 {
     srand((unsigned)time(0));
     Computer test=*new Computer("test1",15);
-    std::vector<int> a=test.getKey();
+    std::vector<int> a=test.getBlock().getKey();
     for(int i=0;i<(int)a.size();i++){
         cout<<a.at(i);
     }

@@ -3,6 +3,7 @@
 
 #include<bits/stdc++.h>
 #include "qubit.h"
+#include "EntangledCubitBlock.h"
 
 class Computer
 {
@@ -13,12 +14,14 @@ class Computer
         std::string getname();
         std::vector<int> getKey();
         std::vector<int> sendKey(Computer b);
+        EntangledCubitBlock getBlock();
     protected:
 
     private:
         std::string name;
-        std::vector<qubit> bits;
+        EntangledCubitBlock qubitBlock;
         std::vector<std::pair<std::vector<int> ,Computer> > Keychain;
+
 };
 
 #endif // COMPUTER_H
