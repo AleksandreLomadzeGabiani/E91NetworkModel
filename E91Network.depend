@@ -27,3 +27,24 @@
 	"qubit.h"
 	<random>
 
+1523042557 source:d:\desktop\simulator\e91network\e91networkmodel\computer.cpp
+	"Computer.h"
+	"qubit.h"
+
+1523079637 d:\desktop\simulator\e91network\e91networkmodel\computer.h
+	<bits/stdc++.h>
+	"qubit.h"
+
+1523038169 d:\desktop\simulator\e91network\e91networkmodel\qubit.h
+
+1523043696 source:d:\desktop\simulator\e91network\e91networkmodel\main.cpp
+	<iostream>
+	<ctime>
+	<random>
+	"qubit.h"
+	"Computer.h"
+
+1523078970 source:d:\desktop\simulator\e91network\e91networkmodel\qubit.cpp
+	"qubit.h"
+	<random>
+

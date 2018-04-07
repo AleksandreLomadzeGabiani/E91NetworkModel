@@ -1,5 +1,6 @@
 #ifndef COMPUTER_H
 #define COMPUTER_H
+
 #include<bits/stdc++.h>
 #include "qubit.h"
 
@@ -11,7 +12,7 @@ class Computer
 
         std::string getname();
         std::vector<int> getKey();
-        void sendKey(Computer b);
+        std::vector<int> sendKey(Computer b);
     protected:
 
     private:

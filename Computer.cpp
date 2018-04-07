@@ -25,6 +25,7 @@ std::vector<int> Computer::getKey(){
     }
     return key;
 }
-void Computer::sendKey(Computer b){
 
+std::vector<int> Computer::sendKey(Computer b){
+    return {};
 }
