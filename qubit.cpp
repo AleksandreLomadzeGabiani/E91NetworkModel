@@ -21,7 +21,7 @@ bool qubit::isEntangled(){
 
 int qubit::getValue(){
     if(isEntangled()){
-        if(rand()%100>=50){
+        if(rand()%11>5){
             return 1;
         }else{
             return 0;
