@@ -51,6 +51,7 @@ B is V1^2 which is probability that when we observe the qubit it will be 1.
       bool isEntangled();
 returns true if the qubit is entangled. [V0^2 and V1^2 == 0.5](https://en.wikipedia.org/wiki/Quantum_entanglement)
 
+## :white_circle:
 ## Class EntangledQubitBlock
 
 ### variables
@@ -74,6 +75,8 @@ generates block of size qubits.
         std::vector<int> getKey();
  returns values of stored qubits.
 
+
+## :white_circle:                                                                                                                          
 ## Class Computer
 
 ### variables
@@ -82,3 +85,13 @@ must be unique to every computer and is used to identify them.
 
       EntangledQubitBlock qubitBlock
 is a collection of entangled qubits that connect two s
+
+### constructors
+      Computer();
+constructs computer with default ID of NULL.
+
+      Computer(std::string n,EntangledQubitBlock z);
+constructs computer with ID=n , and qubitblock=z
+
+
+
