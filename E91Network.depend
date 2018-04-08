@@ -27,26 +27,27 @@
 	"qubit.h"
 	<random>
 
-1523136810 source:d:\desktop\simulator\e91network\e91networkmodel\computer.cpp
+1523175181 source:d:\desktop\simulator\e91network\e91networkmodel\computer.cpp
+	"EntangledQubitBlock.h"
 	"Computer.h"
-	"EntangledCubitBlock.h"
 	"qubit.h"
 	"OTP.h"
 
-1523138771 d:\desktop\simulator\e91network\e91networkmodel\computer.h
+1523175181 d:\desktop\simulator\e91network\e91networkmodel\computer.h
 	<bits/stdc++.h>
 	"qubit.h"
-	"EntangledCubitBlock.h"
+	"EntangledQubitBlock.h"
 
 1523038169 d:\desktop\simulator\e91network\e91networkmodel\qubit.h
 
-1523138555 source:d:\desktop\simulator\e91network\e91networkmodel\main.cpp
+1523174882 source:d:\desktop\simulator\e91network\e91networkmodel\main.cpp
 	<bits/stdc++.h>
 	<ctime>
 	<random>
-	"qubit.h"
 	"Computer.h"
+	"qubit.h"
 	"OTP.h"
+	"misc.h"
 
 1523078970 source:d:\desktop\simulator\e91network\e91networkmodel\qubit.cpp
 	"qubit.h"
@@ -64,19 +65,31 @@
 	"Computer.h"
 	"qubit.h"
 
-1523133130 source:d:\desktop\simulator\e91network\e91networkmodel\entangledcubitblock.cpp
+1523174609 source:d:\desktop\simulator\e91network\e91networkmodel\entangledcubitblock.cpp
+	<bits/stdc++.h>
 	"EntangledCubitBlock.h"
 	"qubit.h"
-	<bits/stdc++.h>
 
-1523133128 d:\desktop\simulator\e91network\e91networkmodel\entangledcubitblock.h
-	"qubit.h"
+1523174615 d:\desktop\simulator\e91network\e91networkmodel\entangledcubitblock.h
 	<bits/stdc++.h>
+	"qubit.h"
 
 1523136930 d:\desktop\simulator\e91network\e91networkmodel\otp.h
 	<bits/stdc++.h>
 
-1523136990 source:d:\desktop\simulator\e91network\e91networkmodel\otp.cpp
-	"OTP.h"
+1523174599 source:d:\desktop\simulator\e91network\e91networkmodel\otp.cpp
 	<bits/stdc++.h>
+	"OTP.h"
+
+1523174936 d:\desktop\simulator\e91network\e91networkmodel\misc.h
+	<bits/stdc++.h>
+
+1523175181 d:\desktop\simulator\e91network\e91networkmodel\entangledqubitblock.h
+	<bits/stdc++.h>
+	"qubit.h"
+
+1523175141 source:d:\desktop\simulator\e91network\e91networkmodel\entangledqubitblock.cpp
+	<bits/stdc++.h>
+	"EntangledQubitBlock.h"
+	"qubit.h"
 

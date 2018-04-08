@@ -1,5 +1,6 @@
-#include "OTP.h"
 #include <bits/stdc++.h>
+#include "OTP.h"
+
 
 std::vector<int> OTPencryptdata(std::vector<int> in,std::vector<int> key){
     std::vector<int> key1;

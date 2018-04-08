@@ -1,12 +1,13 @@
-#ifndef ENTANGLEDCUBITBLOCK_H
-#define ENTANGLEDCUBITBLOCK_H
-#include "qubit.h"
+#ifndef ENTANGLEDQUBITBLOCK_H
+#define ENTANGLEDQUBITBLOCK_H
 #include <bits/stdc++.h>
-class EntangledCubitBlock
+#include "qubit.h"
+
+class EntangledQubitBlock
 {
     public:
-        EntangledCubitBlock();
-        EntangledCubitBlock(int size);
+        EntangledQubitBlock();
+        EntangledQubitBlock(int size);
 
         std::vector<int> getKey();
         std::vector<int> getCurrentState();

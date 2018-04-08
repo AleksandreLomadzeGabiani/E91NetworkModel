@@ -36,10 +36,12 @@
 		<Unit filename="Computer.h" />
 		<Unit filename="EntangledCubitBlock.cpp" />
 		<Unit filename="EntangledCubitBlock.h" />
-		<Unit filename="MakeshiftClassicalChannel.h" />
 		<Unit filename="OTP.cpp" />
 		<Unit filename="OTP.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="misc.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
 		<Unit filename="qubit.cpp" />
 		<Unit filename="qubit.h" />
 		<Extensions>
