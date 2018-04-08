@@ -2,25 +2,25 @@
 #include <ctime>
 #include <random>
 #include "Computer.h"
+#include "Server.h"
 #include "qubit.h"
 #include "OTP.h"
 #include "misc.h"
 
-using namespace std;
-
 int main()
 {
     srand((unsigned)time(0));
-    EntangledQubitBlock k=*new EntangledQubitBlock(15);
+    Computer a=*new Computer("test1",20);
+    Computer b=*new Computer("test2",20);
+    Server c=*new Server("test3",{&a,&b});
 
-    k.getKey();
-    std::vector<int> a=k.getCurrentState();
-    std::vector<int> b=k.getKey();
-    std::vector<int> c=OTPencryptdata(a,b);
+    //printVect(a.getBlock().getKey());
 
-    printVect(a);
-    printVect(b);
-    printVect(c);
-    printVect(OTPdecryptdata(c,b));
+    a.sendKey(c,b);
+
+    printVect(a.getkey().first);
+    printVect(b.getkey().first);
+    std::cout<<b.getkey().second;
+
     return 0;
 }

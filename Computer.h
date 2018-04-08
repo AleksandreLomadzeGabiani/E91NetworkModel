@@ -1,11 +1,10 @@
 #ifndef COMPUTER_H
 #define COMPUTER_H
-
 #include<bits/stdc++.h>
-
 #include "EntangledQubitBlock.h"
-#include "Server.h"
 #include "qubit.h"
+
+class Server;
 
 class Computer{
     public:
@@ -16,11 +15,13 @@ class Computer{
         //Accessors
         std::string getID();
         EntangledQubitBlock getBlock();
-        std::vector<int> getkey();
+        std::pair<std::vector<int>,std::string> getkey();
+        std::vector<int> getTemp();
 
         //Mutators
-        void recieveInfo(int query,std::string sender,std::vector<int> info);
+        void recieveInfo(std::string sender,std::vector<int> info);
         void recievePing(); //SETS TEMP TO THE QUANTUM BLOCK CURRENT FORM
+        void sendKey(Server s,Computer b);
     protected:
 
     private:

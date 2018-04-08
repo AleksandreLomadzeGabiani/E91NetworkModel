@@ -34,10 +34,12 @@
 		</Compiler>
 		<Unit filename="Computer.cpp" />
 		<Unit filename="Computer.h" />
-		<Unit filename="EntangledCubitBlock.cpp" />
-		<Unit filename="EntangledCubitBlock.h" />
+		<Unit filename="EntangledQubitBlock.cpp" />
+		<Unit filename="EntangledQubitBlock.h" />
 		<Unit filename="OTP.cpp" />
 		<Unit filename="OTP.h" />
+		<Unit filename="Server.cpp" />
+		<Unit filename="Server.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="misc.h">
 			<Option target="&lt;{~None~}&gt;" />

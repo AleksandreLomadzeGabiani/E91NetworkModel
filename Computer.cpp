@@ -1,5 +1,4 @@
 #include <bits/stdc++.h>
-
 #include "EntangledQubitBlock.h"
 #include "Computer.h"
 #include "Server.h"
@@ -30,20 +29,25 @@ EntangledQubitBlock Computer::getBlock(){
 
 //MUTATORS
 void Computer::recievePing(){
-    Computer::temp=Computer::qubitBlock.getCurrentState();
+    Computer::temp=getBlock().getKey();
 }
 
-void Computer::recieveInfo(int queryType,std::string sender,std::vector<int> info){
-    key.second=sender;
-    if(queryType==1){
-        Computer::key.first=OTPdecryptdata(info,temp);
-    }else if(queryType==0){
-        for(int i=0;i<(int)info.size();i++){
-            if(info.at(i)==-1){
-                key.first.erase(key.first.begin() + i);;
-                info.erase(info.begin() + i);
-                i--;
-            }
-        }
-    }
+std::vector<int> Computer::getTemp(){
+    return temp;
 }
+
+void Computer::recieveInfo(std::string sender,std::vector<int> info){
+    Computer::key.second=sender;
+    Computer::key.first=OTPdecryptdata(info,temp);
+}
+
+void Computer::sendKey(Server s,Computer b){
+    key.second=b.getID();
+    key.first=getBlock().getKey();
+    temp=key.first;
+    s.recieverequest(ID,b.getID());
+}
+
+ std::pair<std::vector<int>,std::string> Computer::getkey(){
+    return key;
+ }
