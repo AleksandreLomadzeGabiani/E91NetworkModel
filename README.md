@@ -41,16 +41,44 @@ B is V1^2 which is probability that when we observe the qubit it will be 1.
  Sets A and B as 0.5 on default.
         
       qubit(double a);
- Sets A=a , and B=1-A
+ Sets A=a , and B=1-A 
  
  ### Accessors
  
       int getValue();
   returns random integer from [0,1] if the qubit is entangled. if it is not we return -1. (**_not because it has no value, but because the value of a qubit will does matter to us as much (in the scope of this model) as the fact that it isn't entangled_**)
 
-      bool isEntangled()
+      bool isEntangled();
 returns true if the qubit is entangled. [V0^2 and V1^2 == 0.5](https://en.wikipedia.org/wiki/Quantum_entanglement)
+
+## Class EntangledQubitBlock
+
+### variables
+      std::vector<qubit> bits;
+The entangled qubits that generate the key
+      
+      std::vector<int> currentState;
+Stores the last value that observed qubits took on
+
+### constructors
+        EntangledQubitBlock();
+generated block of 20 qubits
+
+        EntangledQubitBlock(int size);
+generates block of size qubits.
+
+### Acessors
+        std::vector<int> getCurrentState();
+ gets the last observed values of qubits.
+ 
+        std::vector<int> getKey();
+ returns values of stored qubits.
 
 ## Class Computer
 
 ### variables
+      string ID;
+must be unique to every computer and is used to identify them.
+
+      EntangledQubitBlock qubitBlock
+is a collection of entangled qubits that connect two s
