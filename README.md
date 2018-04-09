@@ -62,17 +62,17 @@ The entangled qubits that generate the key
 Stores the last value that observed qubits took on
 
 ### constructors
-        EntangledQubitBlock();
+      EntangledQubitBlock();
 generated block of 20 qubits
 
-        EntangledQubitBlock(int size);
+      EntangledQubitBlock(int size);
 generates block of size qubits.
 
 ### Acessors
-        std::vector<int> getCurrentState();
+      std::vector<int> getCurrentState();
  gets the last observed values of qubits.
  
-        std::vector<int> getKey();
+      std::vector<int> getKey();
  returns values of stored qubits.
 
 
@@ -86,12 +86,30 @@ must be unique to every computer and is used to identify them.
       EntangledQubitBlock qubitBlock
 is a collection of entangled qubits that connect two s
 
+
+      std::vector<int> temp;
+      std::pair<std::vector<int>,std::string> key;
 ### constructors
       Computer();
 constructs computer with default ID of NULL.
 
       Computer(std::string n,EntangledQubitBlock z);
 constructs computer with ID=n , and qubitblock=z
+
+      Computer(std::string n,int bitnum);
+constructs computer with ID=n , and qubitblock=*new qubitblock(bitnum)     
+
+### Accessors
+      std::string getID();
+      EntangledQubitBlock getBlock();
+      std::pair<std::vector<int>,std::string> getkey();
+      std::vector<int> getTemp();
+
+### Mutators
+      void recieveInfo(std::string sender,std::vector<int> info);
+      void recievePing(); //SETS TEMP TO THE QUANTUM BLOCK CURRENT FORM
+      void sendKey(Server s,Computer b);
+      
 
 
 
