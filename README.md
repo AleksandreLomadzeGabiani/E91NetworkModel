@@ -86,7 +86,6 @@ must be unique to every computer and is used to identify them.
       EntangledQubitBlock qubitBlock
 is a collection of entangled qubits that connect two s
 
-
       std::vector<int> temp;
       std::pair<std::vector<int>,std::string> key;
 ### constructors
@@ -110,6 +109,30 @@ constructs computer with ID=n , and qubitblock=*new qubitblock(bitnum)
       void recievePing(); //SETS TEMP TO THE QUANTUM BLOCK CURRENT FORM
       void sendKey(Server s,Computer b);
       
+## :white_circle:                                                                                                                          
+## Class Server
 
+### variables
+     std::string ID;
+     std::vector<Computer*> connections;
+     std::vector<int> temp;
+### constructors
+     Server();
+     Server(std::string id,std::vector<Computer*> c);
 
+### other functions 
+     void recieverequest(std::string id,std::string reciever);
+## :white_circle:                                                                                                                          
+## Class OTP
 
+###functions
+      std::vector<int> OTPencryptdata(std::vector<int> in,std::vector<int> key)
+      std::vector<int> OTPdecryptdata(std::vector<int> c1,std::vector<int> key) 
+
+## :white_circle:                                                                                                                          
+## Header misc
+
+###functions
+      printVect(std::vector<int> v)
+
+## END OF DOCUMENTATION
